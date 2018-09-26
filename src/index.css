@@ -1,5 +1,66 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.login-signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-signup-container .ui.form input {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+ }
+
+.login-signup-container .ui.form .field {
+  margin-bottom: 2em;
+}
+
+.login-signup-container .ui.button {
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 1em;
+}
+
+.form-container {
+   display: flex;
+   width: 30%;
+   margin-top: 20vh;
+   padding: 3em;
+   flex-direction: column;
+   background-color: rgb(57, 57, 57);
+   border-top: 10px solid rgb(122, 228, 230);
+  }
+
+.form-container h1, p {
+  color: rgb(255, 255, 255);
+}
+
+.form-container a {
+  color: rgb(122, 228, 230);
+}
+
+.home-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1000px) {
+  .form-container {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+   .form-container {
+     width: 100%;
+   }
 }
